@@ -22,18 +22,18 @@ class device_handler(debounce_handler):
     """
     #TRIGGERS = {str(sys.argv[1]): int(sys.argv[2])}
     #TRIGGERS = {"office": 52000}
-    TRIGGERS = {"kitchen": 52000,"living room":51000}
+    TRIGGERS = {"light": 52000,"fan":51000}
 
     def act(self, client_address, state, name):
         print("State", state, "from client @", client_address)
         # GPIO.setmode(GPIO.BOARD) ## Use board pin numbering
         # GPIO.setup(int(7), GPIO.OUT)   ## Setup GPIO Pin to OUTPUT
         # GPIO.output(int(7), state) ## State is true/false
-        if name=="kitchen":
+        if name=="light":
             GPIO.setmode(GPIO.BOARD) ## Use board pin numbering
             GPIO.setup(int(7), GPIO.OUT)   ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(7), state) ## State is true/false
-        elif name =="living room":
+        elif name =="fan":
             GPIO.setmode(GPIO.BOARD) ## Use board pin numbering
             GPIO.setup(int(11), GPIO.OUT)   ## Setup GPIO Pin to OUTPUT
             GPIO.output(int(11), state) ## State is true/false
