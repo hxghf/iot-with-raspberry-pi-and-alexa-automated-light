@@ -4,7 +4,7 @@ Instructions:
 Download "RASPBIAN STRETCH WITH DESKTOP" and unzip the zip file
 https://www.raspberrypi.org/downloads/raspbian/
 
-Download "win32diskimager--install.exe" program from following URL https://sourceforge.net/projects/win32diskimager/files/latest/download
+Download "win32diskimager-1.0.0-install.exe" program from following URL https://sourceforge.net/projects/win32diskimager/files/latest/download
 
 Install "win32diskimager-1.0.0-install.exe"
 
@@ -18,15 +18,16 @@ Launch "win32diskimager" program. Select image file "2017-04-10-raspbian-jessie.
 
 Once image writing is completed, Copy "ssh" (ssh file is empty) and "wpa_supplicant.conf" files to root of the sd card. Open "wpa_supplicant.conf" in text editor and update ssid (wi-fi name) & password.
 
-Insert the sd card into Raspberry Pi 3 and boot and wit for 10 seconds
+Insert the sd card into Raspberry Pi 3 then plug in and wait for 10 seconds
 
-In windows go to run & type "cmd" and type arp -a in command prompt. Look for "Physical Address" that starts with b8-27* & note the Internet Address. This is your Raspberry Pi3 Wi-fi IP address on your network.
+now connect the raspberry pi with hdmi and boot it up then when you have setted the pi and all (you know it when there is a desktop screen on the output like a real computer) then go in terminal(on the top bar the one which is a black box with a white arrow followed by an underscore) and open it then write "ifconfig" in the terminal then next to the "wlan0:" or under it find a line like "inet" next it there is a ip address copy it somewhere thats your pi's ip then
 
 
 
 Download "Putty.exe" from following URL https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 Run "Putty.exe" and type IP address in host name field and click start button & click yes to popup. On putty command line type in "pi" for "Login as:" & enter. For password enter "raspberry" and hit enter. You should see "pi@raspberrypi:~ $" prompt.
+
 
 
 
