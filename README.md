@@ -1,5 +1,10 @@
 automated light with pi and alexa
-
+so first on your pi connect a relay to pin 7 and another on 11 and connect the others to gnd and 5V respectively and connect your light to the relay and you need to setup the pi and alexa on your own links to buy
+*THESE ARE THE OFFICIAL LINKS YOU CAN BUY THE SAME FROM AMAZON ETC. FOR CHEAPER PRIZES*(the relay is from amazon)THESE MIGHT NOT BE IN STOCK
+relay:https://www.amazon.in/REES52-5VRELAY-Channel-Arduino-Raspberry/dp/B01HXJDBII?tag=googinhydr18418-21&tag=googinkenshoo-21&ascsubtag=_k_CjwKCAjwq-TmBRBdEiwAaO1en1v2e-Va-OnJJ5MdwpQjFp5ImoLM2h7qO6wKa3O6uUPubl3lrHaP8BoCCasQAvD_BwE_k_&gclid=CjwKCAjwq-TmBRBdEiwAaO1en1v2e-Va-OnJJ5MdwpQjFp5ImoLM2h7qO6wKa3O6uUPubl3lrHaP8BoCCasQAvD_BwE
+raspberry pi 3 B+:https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/
+Alexa Echo Dot:https://www.amazon.in/Echo-Dot-2nd-Gen-speaker/dp/B071NB4PGV
+you can use any type of alexa but only alexa not google home or anything and you can use a different pi but it might not be same or not even work and the "Good Night" command i added myself on the alexa app it is not in the code
 ## Instructions:
 
 1. Download "RASPBIAN STRETCH WITH DESKTOP" and unzip "raspbian-jessie.zip"
@@ -41,9 +46,7 @@ click it then type "ifconfig" then under the line "wlan0:" find "inet" next to i
 1. Download this github project as zip file with following command
   "wget https://github.com/hxghf/iot-with-raspberry-pi-and-alexa-automated-light/edit/master/README.md/master.zip"
 1. Unzip downloaded zip file with "unzip master.zip" command and type "cd IOT-Pi3-Alexa-Automation-master" command after unzip completes
-1. (Optional) Entery "sudo pip install virtualenv" command to install virtualenv on Pi
-1. (Optional) Enter "virtualenv ipaa-env" command to create virtual environment for your project
-1. (Optional) Enter ". ipaa-env/bin/activate" command to activate your project's virtualen vironment
+
 1. Enter "sudo python3 RPi_name_port_gpio.py" command to run Pi IOT program
 1. Give voice command to Alex to discover devices "Alexa discover devices" it will search your network and discover your Raspberry Pi 3 as an IOT device.
 1. Give a voice command to Alexa "Turn on the office" you should hear a relay clicking sound and led turn on
